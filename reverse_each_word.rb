@@ -8,8 +8,6 @@
 # end
 require 'pry'
 def reverse_each_word (sentence)
-  sentence_array = sentence.split
-  sentence_array.collect {|word| word.reverse}
-  reverse_sentence = sentence_array.join(" ")
-  reverse_sentence
+  reverse_string = sentence.split.collect {|word| word.reverse}
+  reverse_string.join (" ")
 end
