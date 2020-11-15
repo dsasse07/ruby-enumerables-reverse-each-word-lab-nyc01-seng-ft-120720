@@ -6,11 +6,13 @@
 #   end
 #   new_sentence.join(" ")
 # end
-
+require 'pry'
 def reverse_each_word (sentence)
   sentence_array = sentence.split
   sentence_array.collect do |word|
     word.reverse
+    puts word
+    binding.pry
   end
   sentence_array.join(" ")
 end
